@@ -1,196 +1,174 @@
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/init-club/.github/main/assets/logo-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/init-club/.github/main/assets/logo-light.svg">
-    <img alt="Init Club Logo"
-         src="https://raw.githubusercontent.com/init-club/.github/main/assets/logo-light.svg"
-         width="300">
-  </picture>
-    <h1>Onboarding Tasks for Init Club Members - 2026</h1>
-</div>
+# Init Club — Onboarding Tasks (2026)
 
-Welcome — this repository contains the official onboarding tasks for new members joining the Init Club at Amrita Vishwa Vidyapeetham, Coimbatore in 2026. Its purpose is to give you a clear, practical path from first contact to working confidently with our code, tools and processes.
+## Welcome
 
-This top-level README explains:
-- what the repository is for,
-- the available tasks and a short description of each,
-- how you should approach and submit work,
-- evaluation expectations,
-- the basic GitHub workflow we expect you to follow.
+Onboarding Tasks — Init Club (2026)
 
-If you are editing files here, please also read `CONTRIBUTING.md` for the full contribution process and branch rules.
+This repository contains documentation-first onboarding tasks for new contributors. Each task folder's README describes the objective, acceptance criteria, helpful references, and submission instructions.
 
----
+## How this repo is organized
 
-## Purpose
+Top-level layout
 
-This repo is a single place for structured onboarding tasks. Each task is self-contained inside its own directory (`task-00/`, `task-01/`, ... `task-06/`) and includes a detailed `README.md` that covers the objective, prerequisites, step-by-step instructions, expected deliverables, and evaluation criteria.
+- `LICENSE` — repository license.
+- `README.md` — this top-level introduction.
+- `task/` — directory containing individual task folders (each with a `README.md` describing the task and submission requirements).
 
-Use this repo to:
-- learn our Git/GitHub workflow,
-- practise local development setup,
-- demonstrate basic technical skills,
-- contribute small improvements to a shared repository,
-- optionally write a reflective blog post of your learning.
+Each task folder contains:
+- `README.md` — detailed task instructions, acceptance criteria, examples, and helpful resources.
+- Optional starter files (scripts, sample code, Dockerfile, etc.) where applicable.
+- When you submit: your work should be placed under `task/<your-github-username>/<task-folder>/`.
 
-All evaluated tasks must be submitted via GitHub pull requests. Blogging or personal write-ups are optional but encouraged for your portfolio.
+## Task list (high level)
 
----
+This repository captures the following tasks (see each folder for details and step-by-step instructions):
 
-## Repository structure
+- Task 1.1: The Linux Migration — Install Linux (dual-boot / WSL2 / VM) and provide evidence.
+- Task 1.2: Terminal Velocity — Touch-typing + shell fluency; submit commands & typing proof.
+- Task 2.1: Containerization — Containerize a Hello World app with Docker and docker-compose.
+- Task 2.1 (Algorithm Tour): Binary Search in C/C++ / Python / JavaScript.
+- Task 2.2: The Broken Web App — Debug and fix a disconnected submit button; submit a PR.
+- Task 4.1: Dotfiles Showcase — Publish your dotfiles and provide a reproducible bootstrap.
+- Task 4.2: Good First Issue — Contribute to an external repo; submit the external PR link.
+- TASK 5: Career Tracks — Choose ONE:
+  - Track A: Systems Engineer — `check_resources.sh` and cron setup.
+  - Track B: AI Researcher — `sentiment.py` using pre-trained models.
+  - Track C: Software Developer — To-Do CLI that persists tasks in JSON.
 
-At the top level you will find:
+## How to submit a task
 
-- `README.md` — this file (overview and workflow).
-- `CONTRIBUTING.md` — contribution rules, branching strategy and PR guidelines.
-- `members/` — a directory containing `members.yml` (or `members.md`) where you add your personal details via PR.
-- `task-00/` through `task-06/` — each task folder contains a `README.md` and any sample files or templates required.
+Follow these steps so reviewers can run and verify your work quickly:
 
-All task folders follow the naming convention: `task-0N` where `N` is the task number with leading zero for consistent sorting (e.g. `task-00`, `task-01`, ...).
+1. Fork the repository to your GitHub account.
+2. Create a directory for your work:
+   - `task/<your-github-username>/<task-id-or-name>/`
+3. Add your deliverables. Typical required files:
+   - `README.md` (short personal writeup describing choices and verification steps).
+   - Any screenshots, GIFs, or example output (e.g., `neofetch-screenshot.png`, `docker-ps-screenshot.png`).
+   - Source files or scripts (`check_resources.sh`, `todo.py`, `sentiment.py`, etc.).
+   - `usage.txt` or `examples.txt` describing the exact commands you ran.
+4. Commit small, focused changes with descriptive messages.
+5. Push to a feature branch, then open a PR against `init-club/onboarding-2026` naming your PR clearly (see section below).
+6. In the PR description include:
+   - Short summary and which task you're submitting.
+   - Clear verification steps for reviewers (commands + expected output).
+   - Links to any external PRs (Task 2.2 / Task 4.2).
+   - Screenshots and artifacts as attachments or files in your submission directory.
 
----
+Quickstart
 
-## Task list (short descriptions)
+1. Fork this repository on GitHub.
+2. Create your submission folder: `task/<your-github-username>/<task-id>/`.
+3. Add a short `README.md` describing your approach and the artifacts requested by the task.
+4. Include only the files the task asks for (screenshots, short source files, diffs, or configs).
+5. Open a Pull Request with verification steps and any external links the task requires.
 
-- `task-00` — Repository onboarding and Git workflow  
-  Objective: Fork the repository, create a feature branch, add your details to `members/`, and open a PR.
+Notes
+- Implement and test solutions locally in your environment, then include the requested deliverables when submitting.
+- Avoid committing large binaries, models, or secrets. If in doubt, ask via an Issue.
 
-- `task-01` — Local development environment setup  
-  Objective: Install required tools, clone your fork, and demonstrate a working local setup with logs/screenshots.
+Example PR title: `feat(tasks): add linux-migration submission by alice`
 
-- `task-02` — Git fundamentals and collaboration  
-  Objective: Use branches, rebase or merge from upstream, and resolve a simple merge conflict; submit a clean PR.
+## Standards & acceptance criteria
 
-- `task-03` — Documentation and Markdown skills  
-  Objective: Produce a clear, structured README explaining a technical concept using headings, code blocks and lists.
+Each task README enumerates the deliverables and what constitutes an acceptable submission. Reviewers will check:
 
-- `task-04` — Small technical implementation  
-  Objective: Implement a small script or configuration demonstrating problem-solving and coding standards.
+- Deliverables are present and runnable.
+- README provides clear setup and verification steps.
+- Screenshots / evidence are legible and show the relevant info (e.g., `neofetch` output).
+- For fixes (e.g., the broken web app), the PR both fixes the root cause and includes explanation + tests where applicable.
+- Code style: readable, documented, and minimal. Avoid secrets and large binaries in PRs.
 
-- `task-05` — Open-source style contribution  
-  Objective: Pick an issue or improvement in this repo, make a meaningful change and submit an approved PR.
+If a task has Gold/Silver tiers (e.g., dual-boot vs WSL2), clearly state which tier you expect to be evaluated against.
 
-- `task-06` — Learning reflection (optional blog)  
-  Objective: Write a blog post or markdown article explaining what you learned. Optional; not required for evaluation.
+## Review process & rubric
 
-Each task directory includes full, beginner-friendly instructions. Start with `task-00` and proceed in order; you may complete tasks in parallel if you prefer.
+Reviews are performed by maintainers and/or volunteers. Expect feedback to be constructive and focused on reproducibility.
 
----
+Typical rubric (per task):
+- Completeness (40%): All required files and evidence are present.
+- Correctness (30%): The solution works as claimed; for bug fixes, the root cause is addressed.
+- Documentation (20%): README + usage instructions are clear and sufficient to reproduce results.
+- Style & safety (10%): Clean code and no unsafe shortcuts (e.g., committing secrets).
 
-## How you should approach tasks
+Review outcomes:
+- Approved: Merge or close with merge instructions.
+- Request changes: Ask for clarifications, missing artifacts, or small fixes.
+- Discussion: If scope or expectations are unclear, reviewers will ask clarifying questions.
 
-1. Read the task `README.md` in full before starting.
-2. Make a small, focused change per pull request. Keep PRs atomic and well described.
-3. Follow the branch naming and commit message conventions below.
-4. Include evidence required by the task (screenshots, logs, small programmes, or markdown write-ups).
-5. If something is unclear, add a short note in your PR describing the assumption you made — reviewers value transparency.
-6. Keep accessibility and clarity in mind when writing documentation.
+## Branching, commits, and PR style guide
 
----
+- Create a fresh branch off `main` for each submission:
+  - `git checkout -b feat/tasks/<task>-<username>`
+- Commit message guidelines:
+  - Use concise, descriptive messages. Examples:
+    - `feat(tasks): add linux-migration submission by <username>`
+    - `fix(frontend): bind rsvp form submit handler`
+    - `chore(ci): add simple test for rsvp endpoint`
+- Keep commits small and atomic where possible. Squash or clean history if requested.
+- Fill the PR description with:
+  - What you did and why.
+  - How to run and verify (copy-pasteable commands).
+  - Any known limitations or additional notes.
 
-## Evaluation expectations
+Example PR description template:
 
-- All evaluated tasks must be submitted through GitHub pull requests to this repository (your fork → main repository).
-- Pull requests should include:
-  - A descriptive title and summary,
-  - Link(s) to relevant files in your branch,
-  - Evidence of work (screenshots, logs, or runnable examples),
-  - A brief explanation of any assumptions or deviations.
-- Reviewers from the Init Club will comment on technical correctness, clarity and process adherence.
-- Blogs are optional and will not substitute GitHub submission. A blog is a showcase, not a submission channel.
+```markdown
+Title: feat(tasks): add terminal-velocity by <username>
 
----
+Summary:
+- Completed Task 1.2 (Terminal Velocity).
+- Included typing screenshot and `commands.md`.
 
-## Quick start — fork, clone, branch, PR
+How to verify:
+1. Open task/<username>/2-terminal-velocity/commands.md
+2. Verify the three commands and outputs.
+3. Confirm screenshot.png shows WPM and accuracy.
 
-Use the GitHub UI to fork this repository to your account. Then run these commands locally (example):
-
-```onboarding-2026/README.md#L1-12
-# Replace <your-username> and <repo> as needed
-git clone git@github.com:<your-username>/onboarding-2026.git
-cd onboarding-2026
-git remote add upstream git@github.com:init-club/onboarding-2026.git
-git fetch upstream
+Notes:
+- No external dependencies.
 ```
 
-Create a feature branch (branch naming conventions below) and make changes:
+## Templates and starter files
 
-```onboarding-2026/README.md#L13-24
-# Create and switch to a new branch
-git checkout -b feat/task-00-add-member-yourname
+Many tasks include starter templates and example files inside their task folders. If you want a boilerplate for a task, look for files named:
+- `template-*.sh`, `todo.py` (starter), `sentiment.py` (starter), `Dockerfile`, `docker-compose.yml`, or example code under the relevant task folder.
 
-# Make your edits (e.g. add entry to members/members.yml), then
-git add members/members.yml
-git commit -m "feat(task-00): add member entry for Your Name (email@example.com)"
-git push -u origin feat/task-00-add-member-yourname
-```
+If you prefer, maintainers can generate a minimal skeleton for you in a branch — open an issue requesting it.
 
-Then open a Pull Request from your fork/branch into `main` of the upstream repository using the GitHub website. Use the PR template if present.
+## Getting help and community expectations
 
----
+- Before opening an Issue, search this repo for existing guidance.
+- If you need help with a task (e.g., debugging an installer or tests), open an Issue with:
+  - The task folder and your branch name.
+  - Clear steps to reproduce the problem and any logs or screenshots.
+- Be respectful, concise, and patient — maintainers are volunteers.
+- Code of Conduct: follow the Init Club code of conduct (link in the organization profile).
 
-## Branch naming and commit message conventions
+## Security, privacy, and licensing
 
-Branch names:
-- Feature branches: `feat/task-0N-short-desc` (e.g. `feat/task-02-resolve-merge-conflict`)
-- Fix branches: `fix/task-0N-short-desc`
-- Docs branches: `docs/task-0N-short-desc`
+- Do NOT commit secrets, API keys, private keys, or large binary models to this repository.
+- Use `.gitignore` to avoid committing OS-specific files or local artifacts.
+- For tasks requiring models (e.g., transformers), list dependencies in `requirements.txt` and document that models will be downloaded on first run.
+- Repository license: check the `LICENSE` file at the repo root. Respect the license when reusing code or examples.
 
-Keep names short, lowercase and hyphen-separated.
+## Maintainers & contacts
 
-Commit messages:
-- Use conventional style: `type(scope): short summary`  
-  Example: `feat(task-01): document local setup steps`  
-- Use `type` values such as `feat`, `fix`, `docs`, `chore`, `test`.
-- Keep the summary under 72 characters; add a longer body if necessary.
+- Primary maintainers and reviewers are listed in the organization’s team page. If you need to request a reviewer, mention `@init-club/maintainers` in the Issue or PR body.
+- If you want an interactive review session or mentorship, open an Issue titled `Request: reviewer/mentorship — <task> by <username>` and include preferred times.
 
----
+## Final notes & best practices
 
-## Pull request checklist
+- Keep your submission reproducible: include exact commands and expected outputs.
+- Provide friendly README summaries that make it easy for reviewers to reproduce and grade your work.
+- Prefer small, well-documented PRs over monolithic submissions.
+- Ask for help early — debugging/install questions are common and the community can guide you.
 
-When you open a PR, ensure:
-- [ ] The PR title is descriptive and follows project conventions.
-- [ ] The PR description explains what you changed and why.
-- [ ] All required files for the task are present (evidence, write-ups, code).
-- [ ] The branch contains only related commits (squash if necessary).
-- [ ] You added yourself to `members/` as required by `task-00`.
-- [ ] You responded to CI or reviewer comments in a timely manner.
+Happy hacking — we look forward to your contributions!
 
----
+If you want, I can:
+- Add starter files into the `task/template/` folder,
+- Create a CONTRIBUTING.md specifically for reviewers,
+- Or open a draft PR that contains these README improvements.
 
-## Adding yourself to `members/`
-
-The `members/` directory contains `members.yml` (or `members.md`) with a clear format. Add one entry per person. Example entry format (use the file in `members/` as the authoritative template):
-
-```onboarding-2026/README.md#L40-51
-# Example member entry (YAML)
-- name: Your Full Name
-  github: your-github-username
-  email: your.email@example.com
-  role: Research Associate
-  start_date: 2026-02-01
-  location: City, Country
-  notes: "Short note about interests or primary skills"
-```
-
-When you submit your PR for `task-00`, include a link to your fork/branch and a short note confirming you've read the CONTRIBUTING guidelines.
-
----
-
-## Support and review
-
-- Reviewers will aim to provide feedback within a reasonable timeframe; if you need urgent help, mention the relevant contact in your PR or reach out to your onboarding buddy.
-- For questions about evaluation criteria, direct them to the Init Club reviewer group.
-
----
-
-## Accessibility and inclusivity
-
-Write documentation and code samples that are accessible and considerate:
-- Avoid unnecessarily complex language.
-- Use clear, descriptive headings and alt text for images.
-- Prefer inclusive examples and names.
-
----
-
-If you are ready, start with `task-00` and follow its `README.md`. Best of luck — we look forward to reviewing your first pull request.
+Tell me which of these you want next and I’ll prepare it.

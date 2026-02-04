@@ -1,161 +1,298 @@
-# Task 05 — Open-source style contribution
+onboarding-2026/task-05/README.md#L1-999
+# Task 05 — Open-source contribution and career-track sampler
 
 Objective
 
-This task simulates a real open-source contribution workflow. You will locate a small issue or improvement in this repository, implement a clear and tested change, and submit a professional pull request that demonstrates good collaboration practices: issue discussion, focused commits, clear documentation and responsiveness to review.
+This task has two parts:
+1. Practice a real open-source-style contribution workflow by finding a small improvement and submitting a focused Pull Request (open-source contribution).
+2. Choose ONE career track (Systems Engineer, AI Researcher, or Software Developer) and complete the relevant practical assignment so you can taste that path before committing.
 
-Why this task matters
+This document explains both the open-source contribution workflow and the three career-track tasks (Task 5 tracks A, B and C). Complete the open-source contribution portion plus exactly one track.
 
-- Practises the end-to-end contribution flow used in most open-source projects.
-- Reinforces skills in issue triage, minimal-but-meaningful changes, and clear PR communication.
-- Demonstrates your ability to work in a collaborative review-driven environment.
+Context
+
+This onboarding curriculum is maintained by the Init Club at Amrita Vishwa Vidyapeetham, Coimbatore. Use this repository to practise collaboration, then pick a track that aligns with your interests.
 
 Prerequisites
 
 - Completion of `task-00` (forking, branching and PR basics) recommended.
-- Familiarity with Git and the pull request workflow.
-- A working local environment (`task-01`) to run any tests or linters.
-- Read `CONTRIBUTING.md` and the top-level `README.md` before starting.
+- Local development environment (`task-01`) available.
+- Basic familiarity with Git and GitHub PR workflows.
+- For track-specific requirements, see the track sections below.
 
-Selecting an issue or improvement
 
-You may choose one of the following approaches:
+Part 1 — Open-source style contribution (required)
 
-- Pick an open issue in this repository labelled `good first issue` or `help wanted`.
-- Implement a small documentation improvement (typos, examples, formatting).
-- Improve a README, add missing examples, or correct a small workflow inconsistency.
-- Add a simple automated check (e.g. a formatting or markdown linter) if you are comfortable with CI.
+Objective
 
-If no issues exist, propose an improvement via a new issue first. Provide a short description and wait a short period for maintainers to confirm it is acceptable to work on.
+Simulate contributing to a real open-source project: locate a small issue or improvement, open an issue if needed, implement the change, and submit a polished PR with discussion and iteration.
 
-Scope and constraints
+Why this matters
 
-- Keep the change small and focused: one logical change per PR.
-- Avoid large refactors or adding heavy dependencies.
-- Avoid adding proprietary or sensitive information.
-- Prefer improvements that are easy for reviewers to validate quickly.
+- Teaches issue triage, repository navigation and PR etiquette.
+- Demonstrates ability to make small, high-quality contributions.
+- Mirrors real-world open-source collaboration practices.
+
+Scope and acceptable improvements
+
+- Small documentation fixes (typos, broken links).
+- Small usability improvements in README or task instructions.
+- Minor bug fixes in examples or small scripts present in this repo.
+- Adding a helpful example or missing screenshot.
 
 Step-by-step instructions
 
-1. Find or create an issue
-   - Search issues, or create a new issue describing the problem and the proposed fix.
-   - If you open a new issue, include:
-     - A concise title.
-     - A short description of the problem.
-     - Proposed approach and deliverables.
+1. Find or propose an issue
+   - Search this repository for `good first issue` or `help wanted`.
+   - If none exist, open a short issue proposing your improvement and wait for a maintainer to confirm.
 
-2. Create a feature branch
-   - Branch naming convention example:
-```onboarding-2026/task-05/README.md#L1-8
-git checkout -b feat/task-05-fix-typo-<your-github>
-```
-   - Keep the branch focused on the issue.
-
-3. Implement the change
-   - Make minimal, well-scoped code or documentation changes.
-   - Add or update tests if the change affects behaviour.
-   - Run any relevant linting or test commands locally before committing.
-
-4. Write clear commits
-   - Use conventional commit style and concise messages:
-```onboarding-2026/task-05/README.md#L9-16
-feat(task-05): improve README example for CSV summariser
-
-- Clarify command usage with example input/output
-- Fix minor grammar and British English spelling
-```
-   - Keep commits small and logical; use interactive rebase to tidy history if necessary.
-
-5. Push and open a pull request
-   - Push your branch to your fork and open a PR to `onboarding-2026:main`.
-   - Use the PR template (suggested example below) and reference the issue number if applicable:
-```onboarding-2026/task-05/README.md#L17-40
-Title: feat(task-05): <short description>
-
-Description:
-- Task: task-05 — Open-source style contribution
-- Summary of changes:
-  - files changed: list key files
-  - brief explanation of what was changed and why
-- Deliverables:
-  - link to files changed in branch
-  - tests or verification steps
-- Assumptions:
-  - list any assumptions made
-- How to verify:
-  1. Steps to run tests or commands
-  2. Expected output or behaviour
-
-References:
-- Issue: #NN (if applicable)
+2. Create a focused branch
+   - Branch naming: `feat/task-05-<short-desc>` or `fix/task-05-<short-desc>`.
+   - Example:
+```sh
+git checkout -b feat/task-05-fix-typo-readme
 ```
 
-6. Engage in review
-   - Respond promptly and professionally to reviewer comments.
-   - Make changes in the same branch and push updates.
-   - Explain decisions where trade-offs were made.
+3. Implement and test your change
+   - Keep changes minimal and document any behavioural changes.
+   - If adding code, include tests or a verification step.
 
-7. After merge
-   - If requested, follow any post-merge steps (for example: delete branch on your fork).
-   - Add a short note to your onboarding task record (if required).
+4. Commit with conventional messages
+   - Format: `type(scope): short summary`
+   - Example:
+```sh
+git add docs/README.md
+git commit -m "docs(task-05): fix typo in contribution guidelines"
+```
 
-Expected deliverables
+5. Open a PR
+   - Target the `main` branch of this repository.
+   - PR title example: `docs(task-05): fix broken link in README — <Your Name>`
+   - Use the PR template below.
 
-- A pull request implementing a small, meaningful repository improvement.
-- The PR must:
-  - Be focused on one issue or improvement.
-  - Follow branch and commit naming conventions.
-  - Include tests or a clear verification method if relevant.
-  - Contain a clear PR description and reference the issue (or explain why no issue exists).
-- Files changed should be limited to those required by the change.
+6. Engage with reviewers
+   - Respond to comments, update the same branch and push new commits.
+   - Keep the conversation professional and focused.
 
-Submission and evaluation criteria
+Required deliverables (Open-source contribution)
 
-Your submission will be evaluated on:
+- A GitHub Issue (if you created one) and a focused Pull Request implementing the change.
+- Clear PR description with verification steps and links to changed files.
 
-- Correctness: The change addresses the issue and does not introduce regressions.
-- Scope: The PR is focused and does not contain unrelated changes.
-- Documentation: The PR description and in-code comments explain what changed and why.
-- Testing: Tests (if applicable) exist and pass or clear verification steps are provided.
-- Process: Branch naming, commit messages and PR etiquette follow `CONTRIBUTING.md`.
-- Collaboration: You respond constructively to review feedback and iterate as necessary.
+PR description template (suggested)
 
-Reviewers will ask for a rework if the PR is too large, lacks explanation, or fails to meet repository conventions.
+- Title: `<type>(task-05): short summary`
+- Body:
+  - Task: `task-05` — Open-source contribution
+  - Summary of changes
+  - Deliverables
+  - How to verify (steps a reviewer can reproduce in 5–10 minutes)
+  - Assumptions
 
-Optional extensions (for additional learning)
+Evaluation criteria (Open-source contribution)
 
-- Add a simple GitHub Action that runs a linter or unit tests for the part of the repository you touched.
-- Provide a short performance or accessibility note if the change affects end users.
-- Draft a changelog entry or release note summarising the improvement.
-- Prepare a short (2–3 minute) screencast demonstrating the before-and-after behaviour.
+- Focus: PR addresses a single, well-scoped change.
+- Quality: Clear explanation, concise commits and no unrelated changes.
+- Verification: Reviewer can reproduce verification steps.
+- Process: Branch naming and commit messages follow conventions.
 
-Examples of good PR descriptions
+Reviewer checklist (Open-source contribution)
 
-- Short, descriptive title and a bulleted description.
-- Link to the exact files changed (use GitHub UI links).
-- Clear verification steps the reviewer can run in 5–10 minutes.
+- [ ] PR is focused and small.
+- [ ] Title and description follow template.
+- [ ] No sensitive data included.
+- [ ] Tests or verification steps are provided when applicable.
 
-Common pitfalls and troubleshooting
 
-- PR contains unrelated changes: create a new clean branch and cherry-pick the intended commits.
-- Large diffs: break the work into smaller, sequential PRs.
-- Tests failing on CI but passing locally: check runtime versions, environment variables, and ensure deterministic tests.
-- Sensitive data inadvertently committed: contact a maintainer immediately and follow repository escalation procedures.
+Part 2 — Choose ONE track (A, B or C)
 
-Assumptions and notes
+Instruction: pick exactly one of the following tracks. Submit the track deliverables in a single PR (from your fork) to this repository and reference `task-05` in the PR description. Name your branch `feat/task-05-track-<a|b|c>-<short-desc>`.
 
-- You may work from your fork; all reviewed submissions must be via GitHub PRs to this repository.
-- If a chosen issue is ambiguous, document your assumptions in the issue and the PR description.
-- Maintain British English spelling in documentation and commit messages when writing prose.
+Track A — Systems Engineer (OS internals, scripts, automation)
 
-Reviewer checklist
+Focus
 
-- [ ] Is the PR focused and small?
-- [ ] Does the PR reference an issue or include a clear reason why none exists?
-- [ ] Are commit messages clear and conventional?
-- [ ] Is the change documented and testable?
-- [ ] Did the contributor respond to review comments appropriately?
+Systems-level tooling, automation, and scheduling.
 
-If you need help selecting an issue or want feedback on your proposed approach before coding, open a short discussion in a draft issue and tag the onboarding reviewers. I will help you think through options and suggest improvements — and once you’re ready, you can implement the change and submit the PR for formal review.
+Task
 
-Good luck — this task mirrors real open-source collaboration and is excellent practice for working on shared code and documentation.
+Write a Bash script that:
+
+1. Checks the system's available RAM and disk space.
+2. If disk space used is above 80% (i.e. free below 20%), alert the user (console output and optional email if configured).
+3. Schedule the script to run daily via cron (include instructions to install the crontab entry).
+
+Requirements
+
+- Script name: `task-05/systems/monitor.sh`
+- Script must run on a typical Linux environment (Debian/Ubuntu). Document any platform-specific requirements.
+- Provide a safe, read-only "dry-run" flag to show what would happen without making changes.
+- Provide clear exit codes:
+  - `0` — OK
+  - `1` — warning (low disk)
+  - `2` — error (script failure)
+
+Deliverables (Systems Engineer)
+
+- `task-05/systems/monitor.sh` — the script with comments and a `--help` usage output.
+- `task-05/systems/README.md` — run instructions, example crontab line and a short note on how to configure email alerts (optional).
+- Evidence that the script runs: sample output file `task-05/systems/sample-output.txt` or a short terminal transcript.
+
+Example crontab entry (add via `crontab -e`):
+
+```sh
+# Run monitor.sh at 07:00 daily
+0 7 * * * /path/to/onboarding-2026/task-05/systems/monitor.sh --daily >> /var/log/monitor.log 2>&1
+```
+
+Evaluation (Systems Engineer)
+
+- Script correctness: correctly measures RAM and disk; triggers alert at the threshold.
+- Usability: helpful `--help`, safe dry-run mode, clear README.
+- Automation: crontab instructions are correct and non-destructive.
+
+
+Track B — AI Researcher (Data, models, Python)
+
+Focus
+
+Practical use of pre-trained models for simple NLP tasks.
+
+Task: Sentiment Analyzer
+
+1. Use a pre-trained library (TextBlob, VADER, or a small Hugging Face transformer) to build a sentiment analyser.
+2. Provide a Python script `task-05/ai/sentiment.py` that:
+   - Accepts a single sentence as input (command-line argument or interactive prompt).
+   - Outputs: `Positive`, `Negative`, or `Neutral` with a short confidence score if available.
+3. Keep dependencies minimal and document them in `requirements.txt`.
+
+Deliverables (AI Researcher)
+
+- `task-05/ai/sentiment.py` — runnable Python script with usage examples.
+- `task-05/ai/requirements.txt` — pinned minimal dependencies.
+- `task-05/ai/README.md` — instructions to create a virtual environment, install dependencies, and run the script with examples and expected output.
+
+Example usage:
+
+```sh
+python task-05/ai/sentiment.py "I enjoyed the workshop; it was very helpful."
+# Output: Positive (confidence: 0.92)
+```
+
+Evaluation (AI Researcher)
+
+- Correctness: script runs and produces sensible labels for sample texts.
+- Reproducibility: clear instructions and pinned dependencies.
+- Conciseness: minimal external dependencies and clear README.
+
+Notes (AI Researcher)
+
+- If using a transformer model, prefer a small, CPU-friendly model (e.g. distil models) and document model sizes and expected runtime.
+- If online model download is required, advise reviewers about potential network/time constraints.
+
+
+Track C — Software Developer (Full-stack, APIs, CLI)
+
+Focus
+
+User-facing tooling; command-line user experience and data persistence.
+
+Task: To-Do List CLI
+
+1. Build a simple command-line To-Do application in the language of your choice (Python, Node.js recommended).
+2. Features:
+   - Add a task: `todo add "Buy milk"`
+   - List tasks: `todo list`
+   - Delete a task by ID or index: `todo delete 2`
+3. Persist tasks to a local JSON file (e.g. `~/.todo.json` or `task-05/todo/tasks.json` if you prefer repo-local storage).
+4. Provide helpful `--help` output and handle edge cases (empty list, invalid ID).
+
+Deliverables (Software Developer)
+
+- `task-05/todo/` — source code, README and an example tasks file.
+- `task-05/todo/README.md` — installation, usage and examples.
+- (Optional) Basic tests demonstrating add/list/delete behaviours.
+
+Example CLI usage:
+
+```sh
+# Add
+todo add "Write onboarding documentation"
+
+# List
+todo list
+
+# Delete
+todo delete 1
+```
+
+Evaluation (Software Developer)
+
+- Usability: intuitive commands and helpful help text.
+- Persistence: tasks saved and loaded correctly between invocations.
+- Robustness: handles edge cases and invalid input gracefully.
+- Documentation: clear README with examples.
+
+
+Submission and PR expectations (tracks)
+
+- Create a single branch: `feat/task-05-track-<a|b|c>-<short-desc>` (e.g. `feat/task-05-track-a-monitor`).
+- Include only files relevant to your track and the open-source contribution in the PR.
+- PR description must include:
+  - Which track you completed (A/B/C).
+  - Links to the files added.
+  - How a reviewer can run and verify your deliverables (step-by-step).
+  - Any assumptions or platform constraints.
+- Use conventional commit messages and tidy history.
+
+Example PR description snippet
+
+```md
+Task: task-05 — Track A (Systems Engineer) + open-source doc fix
+
+Summary:
+- Added `task-05/systems/monitor.sh` with daily cron instructions.
+- Fixed a minor typo in `CONTRIBUTING.md` (see commit 123abc).
+
+How to verify:
+1. Run `bash task-05/systems/monitor.sh --dry-run`
+2. Inspect `task-05/systems/sample-output.txt`
+```
+
+
+Evaluation and grading notes
+
+- Each PR will be reviewed for correctness, clarity and process adherence.
+- Passing criteria for a track:
+  - Deliverables are present and documented.
+  - Reviewer can reproduce verification steps.
+  - Branch and commit conventions are followed.
+- Reviewers may request changes; update the same branch and push additional commits.
+
+Optional extensions (bonus)
+
+- Track A: integrate with systemd timers or add email/SMS alert examples.
+- Track B: provide a small web or CLI demo that labels several sentences and shows aggregated metrics.
+- Track C: add a basic REST API around the todo (Flask/Express) and a small frontend sample.
+
+Accessibility, privacy and security
+
+- Do not include sensitive personal data in examples.
+- If your solution uses networked services or APIs, provide mock data or instructions for safe, local testing.
+- Keep default configuration non-destructive and suitable for disposable environments.
+
+Support
+
+- If you need the club's example Hello World app or the buggy RSVP repo, open an issue and mention `@init-club-maintainers` or ask your onboarding buddy.
+- For platform-specific questions, document OS/version and error messages in your PR to speed review.
+
+
+Reviewer checklist (summary)
+
+- [ ] Open-source contribution PR is small, linked to an issue (if created) and documented.
+- [ ] Track branch follows naming convention and contains only related files.
+- [ ] Deliverables for the chosen track are present and runnable.
+- [ ] README(s) include clear verification steps.
+- [ ] Commits and PR description follow conventional style and include assumptions.
+
+Good luck — pick the track that excites you, make a focused contribution, and request review when ready. We look forward to reading your PR and helping you iterate.
