@@ -66,9 +66,3 @@ Privacy & security reminders
 - Do not include sensitive data in logs or screenshots.
 - Do not commit private keys, passwords, or credentials.
 - If you offer integrations that require tokens or credentials, document them as opt-in and require reviewers to supply their own secrets during testing.
-
-If you want help
-- If you prefer, I can:
-  - Draft a one-page, non-executable `README` template you can copy into your task directory.
-  - Review a draft of your `README.md` or `check_resources.sh` and provide feedback (I will not write the full script for you).
-- Tell me which option you prefer and I will provide the next steps.

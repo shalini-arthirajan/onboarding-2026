@@ -172,10 +172,3 @@ If you prefer, maintainers can generate a minimal skeleton for you in a branch �
 - Ask for help early — debugging/install questions are common and the community can guide you.
 
 Happy hacking — we look forward to your contributions!
-
-If you want, I can:
-- Add starter files into the `task/template/` folder,
-- Create a CONTRIBUTING.md specifically for reviewers,
-- Or open a draft PR that contains these README improvements.
-
-Tell me which of these you want next and I’ll prepare it.

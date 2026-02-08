@@ -77,6 +77,3 @@
 - [ ] Captured a clear screenshot of the system-info tool showing the distribution.
 - [ ] Wrote a short `README.md` describing choices and verification.
 - [ ] Placed the files under `task/<your-github-username>/1-linux-migration/` and opened a PR with verification steps.
-
-## If you want help
-- I can provide a one-page checklist template for your `README.md` or point you to official vendor pages for installer steps for the distribution and path you plan to use. Tell me which distribution and install path you plan to use and I will point you to the most relevant official documentation.
