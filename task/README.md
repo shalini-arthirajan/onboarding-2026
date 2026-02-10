@@ -1,4 +1,4 @@
-# Init Club — Onboarding Tasks (2026)
+# Init Club - Onboarding Tasks (2026)
 
 ## Overview
 
@@ -17,36 +17,27 @@ This directory contains onboarding tasks. Each task folder describes the goal, a
 - Avoid committing large binaries, models, or secrets. If your task requires large artifacts, host them externally and link to them.
 - Provide clear, concise verification steps and at least one piece of evidence (screenshot, diff, or link) when requested.
 
-## Task summaries and deliverables
+## Task summaries
 
 ### Task 1 - Terminal Velocity
+
 This task focuses on reducing friction between thought and execution by improving typing speed and terminal usage.
 
 ### Task 2 - Linux Migration
+
 To understand software systems, one must control the environment they run on. This task introduces participants to Linux by setting up a developer-friendly operating system.
 
 ### Task 3 - Algorithm Tour
+
 Participants implement the same algorithms across multiple programming languages to observe how identical logic is expressed, constrained, and reasoned about in different execution environments.
 
 ### Task 4 - The Broken Web App
+
 This task introduces debugging by fixing a broken frontend–backend interaction in a web application.
 
 ### Task 5 - Containerization ("It Works on My Machine")
+
 This task introduces containerization using Docker to ensure applications run consistently across systems.
-
-### Task 4.1 — Dotfiles Showcase
-#### Purpose
-- Share a reproducible shell/editor configuration.
-
-#### Deliverables
-- A public dotfiles repository link and a README with a short bootstrap guide and one screenshot showing the result.
-
-### Task 4.2 — Good First Issue
-#### Purpose
-- Practice contributing to external open-source projects.
-
-#### Deliverables
-- Link to the external PR and a one-paragraph note in your submission explaining what you fixed and how you found it.
 
 ## Submission guidelines
 

@@ -22,25 +22,10 @@ Top-level layout
 - `task/` — directory containing individual task folders (each with a `README.md` describing the task and submission requirements).
 
 Each task folder contains:
+
 - `README.md` — detailed task instructions, acceptance criteria, examples, and helpful resources.
 - Optional starter files (scripts, sample code, Dockerfile, etc.) where applicable.
 - When you submit: your work should be placed under `task/<your-github-username>/<task-folder>/`.
-
-## Task list (high level)
-
-This repository captures the following tasks (see each folder for details and step-by-step instructions):
-
-- Task 1.1: The Linux Migration — Install Linux (dual-boot / WSL2 / VM) and provide evidence.
-- Task 1.2: Terminal Velocity — Touch-typing + shell fluency; submit commands & typing proof.
-- Task 2.1: Containerization — Containerize a Hello World app with Docker and docker-compose.
-- Task 2.1 (Algorithm Tour): Binary Search in C/C++ / Python / JavaScript.
-- Task 2.2: The Broken Web App — Debug and fix a disconnected submit button; submit a PR.
-- Task 4.1: Dotfiles Showcase — Publish your dotfiles and provide a reproducible bootstrap.
-- Task 4.2: Good First Issue — Contribute to an external repo; submit the external PR link.
-- TASK 5: Career Tracks — Choose ONE:
-  - Track A: Systems Engineer — `check_resources.sh` and cron setup.
-  - Track B: AI Researcher — `sentiment.py` using pre-trained models.
-  - Track C: Software Developer — To-Do CLI that persists tasks in JSON.
 
 ## How to submit a task
 
@@ -62,7 +47,7 @@ Follow these steps so reviewers can run and verify your work quickly:
    - Links to any external PRs (Task 2.2 / Task 4.2).
    - Screenshots and artifacts as attachments or files in your submission directory.
 
-Quickstart
+## Quickstart
 
 1. Fork this repository on GitHub.
 2. Create your submission folder: `task/<your-github-username>/<task-id>/`.
@@ -70,7 +55,8 @@ Quickstart
 4. Include only the files the task asks for (screenshots, short source files, diffs, or configs).
 5. Open a Pull Request with verification steps and any external links the task requires.
 
-Notes
+## Notes
+
 - Implement and test solutions locally in your environment, then include the requested deliverables when submitting.
 - Avoid committing large binaries, models, or secrets. If in doubt, ask via an Issue.
 
@@ -92,13 +78,15 @@ If a task has Gold/Silver tiers (e.g., dual-boot vs WSL2), clearly state which t
 
 Reviews are performed by maintainers and/or volunteers. Expect feedback to be constructive and focused on reproducibility.
 
-Typical rubric (per task):
+### Typical rubric (per task):
+
 - Completeness (40%): All required files and evidence are present.
 - Correctness (30%): The solution works as claimed; for bug fixes, the root cause is addressed.
 - Documentation (20%): README + usage instructions are clear and sufficient to reproduce results.
 - Style & safety (10%): Clean code and no unsafe shortcuts (e.g., committing secrets).
 
-Review outcomes:
+### Review outcomes:
+
 - Approved: Merge or close with merge instructions.
 - Request changes: Ask for clarifications, missing artifacts, or small fixes.
 - Discussion: If scope or expectations are unclear, reviewers will ask clarifying questions.
@@ -124,21 +112,25 @@ Example PR description template:
 Title: feat(tasks): add terminal-velocity by <username>
 
 Summary:
+
 - Completed Task 1.2 (Terminal Velocity).
 - Included typing screenshot and `commands.md`.
 
 How to verify:
+
 1. Open task/<username>/2-terminal-velocity/commands.md
 2. Verify the three commands and outputs.
 3. Confirm screenshot.png shows WPM and accuracy.
 
 Notes:
+
 - No external dependencies.
 ```
 
 ## Templates and starter files
 
 Many tasks include starter templates and example files inside their task folders. If you want a boilerplate for a task, look for files named:
+
 - `template-*.sh`, `todo.py` (starter), `sentiment.py` (starter), `Dockerfile`, `docker-compose.yml`, or example code under the relevant task folder.
 
 If you prefer, maintainers can generate a minimal skeleton for you in a branch — open an issue requesting it.
